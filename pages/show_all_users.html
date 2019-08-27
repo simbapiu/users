@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../public/stylesheets/application.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../assets/javascript/users.js"></script>
+  <script src="../assets/javascript/show_all_users.js"></script>
+  <title>Show List Users</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">List users</div>
+    <br>
+    <div class="user-links">
+      <button class="new-user">
+        <a href="../index.html" class="new-user">New user</a>
+      </button>
+    </div>
+    <div class="pagination">
+      <button id="prevPage" onclick="prevPage()"><i class="fa fa-angle-left"></i></button>
+      <div id="page"></div>
+      <button id="nextPage" onclick="nextPage()"><i class="fa fa-angle-right"></i></button>
+    </div>
+    <br>
+    <div class="column-title">
+      <div class="user-first-name-title">Name</div>
+      <div class="user-last-name-title">Last Name</div>
+      <div class="user-email-title">Email</div>
+      <div class="icon"></div>
+    </div>
+    <div class="separator-line"></div>
+    <div id="row-user-info">
+
+    </div>
+    <div class="separator-line"></div>
+  </div>
+</body>
+</html>

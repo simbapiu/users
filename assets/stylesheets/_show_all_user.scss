@@ -1,0 +1,177 @@
+%buttons-properties {
+  width: 25px;
+  height: 25px;
+  border-style: none;
+  font-size: large;
+  color: #fff;
+  background-color: #FF0056;
+}
+
+.pagination {
+  width: 92px;
+  height: 30px;
+  margin: auto;
+
+  #prevPage {
+    float: left;
+    @extend %buttons-properties;
+  }
+
+  #nextPage {
+    float: right;
+    @extend %buttons-properties;
+  }
+
+  #page {
+    width: 42px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    float: left;
+  }
+}
+
+.column-title {
+  background-color: #FF0056;
+  color: #fff;
+  margin: auto;
+  width: 335px;
+  height: 30px;
+
+  @media screen and (min-width: $resolution-desktop){
+    width: 800px;
+    margin: auto;
+  }
+
+  &.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .user-first-name-title {
+    padding: 5px;
+    float: left;
+    width: 80px;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 150px;
+    }
+  }
+
+  .user-last-name-title {
+    padding: 5px;
+    float: left;
+    width: 80px;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 150px;
+    }
+  }
+
+  .user-email-title {
+    padding: 5px;
+    float: left;
+    width: 80px;
+    display: none;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 450px;
+      display: inline;
+    }
+  }
+
+  .icon {
+    padding: 5px 0;
+    float: left;
+    width: 10px;
+  }
+}
+.separator-line {
+  border: 1px solid;
+
+  @media screen and (min-width: $resolution-desktop){
+    width: 798px;
+    margin: auto;
+  }
+}
+
+#row-user-info {
+  background-color: #fff;
+  width: 335px;
+  height: 30px;
+  margin: auto;
+
+  @media screen and (min-width: $resolution-desktop){
+    width: 800px;
+  }
+
+  .user-first-name {
+    padding: 5px;
+    float: left;
+    width: 80px;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 150px;
+    }
+  }
+
+  .user-last-name {
+    padding: 5px;
+    float: left;
+    width: 80px;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 150px;
+    }
+  }
+
+  .user-email {
+    padding: 5px;
+    float: left;
+    width: 80px;
+    display: none;
+
+    @media screen and (min-width: $resolution-desktop){
+      width: 400px;
+      display: inline;
+    }
+  }
+
+  .icon-action {
+    float: right;
+    width: 45px;
+    padding: 5px 0;
+    color: #FF0056;
+    cursor: pointer;
+
+    ::before {
+      color: #FF0056;
+    }
+
+    a {
+      padding-left: 20px;
+    }
+  }
+}
+
+.user-links {
+  margin: auto;
+  width: 150px;
+  height: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: $resolution-desktop){
+    width: 800px;
+  }
+
+  .new-user {
+    width: 150px;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-style: none;
+    background-color: #FF0056;
+    color: #fff;
+    font-size: medium;
+  }
+}

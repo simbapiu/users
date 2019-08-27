@@ -1,0 +1,6 @@
+Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file
+that you can use in your website.
+
+Run this command in your console:
+
+sass --watch assets/stylesheets:public/stylesheets

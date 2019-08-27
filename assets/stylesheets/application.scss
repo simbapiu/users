@@ -1,0 +1,24 @@
+@import "resolution_desktop";
+
+body {
+  background-color: #cecece;
+  font-family: "Product Sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  height: 620px;
+  margin: 0 10px;
+  padding: 30px 10px;
+  background-color: #fff;
+
+  @media screen and (min-width: $resolution-desktop){
+    width: 900px;
+    margin: auto;
+    box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  @import "create_user";
+  @import "show_user";
+  @import "show_all_user";
+}

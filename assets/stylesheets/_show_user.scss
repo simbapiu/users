@@ -1,0 +1,93 @@
+.user-information {
+  width: 335px;
+
+  @media screen and (min-width: $resolution-desktop) {
+    width: 735px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .image-section {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background: rgb(225,118,35);
+    background: linear-gradient(153deg, rgba(225,118,35,0.3841911764705882) 0%, rgba(255,0,86,0.3701855742296919) 100%);
+
+    @media screen and (min-width: $resolution-desktop){
+      border-bottom-left-radius: 5%;
+      border-top-right-radius: 0;
+    }
+
+    .image {
+      margin: auto;
+      width: 305px;
+      padding: 20px 0;
+
+      img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        box-shadow: 0px -2px 15px 0px rgba(0, 0, 0, 0.5);
+
+        @media screen and(min-width: $resolution-desktop) {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .data {
+    border: solid 0.5px rgba(255,0,86,0.3701855742296919);
+    border-top: 0;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: x-large;
+
+    @media screen and (min-width: $resolution-desktop) {
+      margin: auto;
+      width: 400px;
+    }
+
+    #data-user {
+      margin: auto;
+
+      div {
+        padding: 10px 0;
+      }
+    }
+
+    @media screen and (min-width: $resolution-desktop){
+      margin: 0;
+      border: solid 0.5px rgba(255,0,86,0.3701855742296919);
+      border-left: 0;
+    }
+  }
+}
+
+.link {
+  width: 150px;
+  margin: auto;
+  padding-bottom: 60px;
+  color: #FF0056;
+  cursor: pointer;
+
+  ::before {
+    color: #FF0056;
+  }
+
+  .edit-user {
+    float: left;
+    font-size: xx-large;
+  }
+
+  .show-all-users {
+    font-size: xx-large;
+    float: right;
+  }
+}

@@ -1,0 +1,33 @@
+.title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.form {
+  width: 300px;
+  margin: auto;
+
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    margin: 7px 0 20px 0;
+    width: 286px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  #btnSubmit {
+    border-style: none;
+    margin: auto;
+    width: 300px;
+    height: 35px;
+    background-color: #FF0056;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
